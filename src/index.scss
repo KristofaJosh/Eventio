@@ -1,105 +1,108 @@
 :root {
-  --black: #000;
+    --black: #323c46;
+    --green: #22d486;
+    --red: #e73370;
+    --grey: #c4c9d1;
 }
 
 @font-face {
-  font-family: Hind;
-  src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: block;
+    font-family: Hind;
+    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Hind;
-  src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
+    font-family: Hind;
+    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Hind;
-  src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
+    font-family: Hind;
+    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Hind;
-  src: local('Hind'), url('./app/assets/fonts/Hind/Hind-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: block;
+    font-family: Hind;
+    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Hind;
-  src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
+    font-family: Hind;
+    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
 }
 
 @font-face {
-  font-family: Playfair;
-  src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
+    font-family: Playfair;
+    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Hind, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Hind, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

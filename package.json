@@ -1,82 +1,87 @@
 {
-  "name": "eventio",
-  "version": "0.1.0",
-  "private": true,
-  "author": "Joshua Enyi-Christopher",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "postcss": "^8.3.11",
-    "postcss-scss": "^4.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "sass": "^1.43.4",
-    "standard-version": "^9.3.2",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "analyze": "react-scripts analyze",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "type-check": "tsc",
-    "release": "standard-version",
-    "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch",
-    "release:major": "standard-version --release-as major",
-    "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md,json}'",
-    "lint:css": "stylelint **/*.scss"
-  },
-  "lint-staged": {
-    "*.{scss,css}": [
-      "stylelint **/*.scss",
-      "prettier --write --ignore-unknown",
-      "git add"
-    ],
-    "*.{js,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write --ignore-unknown",
-      "git add"
-    ],
-    "*.{json,md}": [
-      "prettier --write --ignore-unknown",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all",
-      "cover 99.5%"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version",
-      "cover 99.5%"
-    ]
-  },
-  "devDependencies": {
-    "husky": "^7.0.4",
-    "lint-staged": "^11.2.6",
-    "prettier": "2.4.1",
-    "stylelint": "^14.0.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard-scss": "^2.0.0"
-  }
+    "name": "eventio",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Joshua Enyi-Christopher",
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "postcss": "^8.3.11",
+        "postcss-scss": "^4.0.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3",
+        "sass": "^1.43.4",
+        "standard-version": "^9.3.2",
+        "typescript": "^4.1.2",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "analyze": "react-scripts analyze",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "type-check": "tsc",
+        "release": "standard-version",
+        "release:minor": "standard-version --release-as minor",
+        "release:patch": "standard-version --release-as patch",
+        "release:major": "standard-version --release-as major",
+        "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md,json}'",
+        "lint:css": "stylelint **/*.scss"
+    },
+    "lint-staged": {
+        "*.{scss,css}": [
+            "stylelint **/*.scss",
+            "prettier --write --ignore-unknown"
+        ],
+        "*.{js,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write --ignore-unknown"
+        ],
+        "*.{json,md}": [
+            "prettier --write --ignore-unknown"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all",
+            "cover 99.5%"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version",
+            "cover 99.5%"
+        ]
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.2.0",
+        "@typescript-eslint/parser": "^5.2.0",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.26.1",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "husky": "^7.0.4",
+        "lint-staged": "^11.2.6",
+        "prettier": "2.4.1",
+        "stylelint": "^14.0.1",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard-scss": "^2.0.0"
+    }
 }
