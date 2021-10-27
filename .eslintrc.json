@@ -46,5 +46,13 @@
         "react/jsx-wrap-multilines": "off",
         "no-shadow": "off",
         "comma-dangle": "off"
-    }
+    },
+    "overrides": [
+        {
+            "files": ["**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
 }
