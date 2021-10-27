@@ -11,6 +11,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "postcss": "^8.3.11",
+    "postcss-scss": "^4.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -31,11 +33,23 @@
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
     "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md,json}'",
-    "lint": "eslint --fix",
     "lint:css": "stylelint **/*.scss"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "*.{scss,css}": [
+      "stylelint **/*.scss",
+      "prettier --write --ignore-unknown",
+      "git add"
+    ],
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown",
+      "git add"
+    ],
+    "*.{json,md}": [
+      "prettier --write --ignore-unknown",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -58,8 +72,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.1.0",
-    "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "prettier": "2.4.1",
