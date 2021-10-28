@@ -11,17 +11,17 @@ type TypographyType = FC<HTMLAttributes<HTMLParagraphElement> & TypographyBaseTy
 
 type TypographyBase = TypographyType & { Heading: TextHeadingsComponent };
 
-const Typography: TypographyBase = ({ text, children, className, level, ...props }) => {
+const Typography: TypographyBase = ({ text, children, weight, className, level, ...props }) => {
     return (
-        <p className={`typography__text ${level} ${className ?? ""}`} {...props}>
+        <p className={`typography__text ${level} ${className ?? ""}`} style={{ fontWeight: weight }} {...props}>
             {text || children}
         </p>
     );
 };
 
-const TextHeading: TextHeadingsComponent = ({ children, level, text, className, ...rest }) => {
+const TextHeading: TextHeadingsComponent = ({ children, weight, level, text, className, ...rest }) => {
     const size = ["f28", "f18", "f16", "f14", "f12"];
-    return React.createElement(`h${level || 1}`, { ...rest, className: `typography__text ${size[level - 1]} ${className ?? ""}` }, text || children);
+    return React.createElement(`h${level || 1}`, { ...rest, style: { fontWeight: weight }, className: `typography__text ${size[level - 1]} ${className ?? ""}` }, text || children);
 };
 
 Typography.Heading = TextHeading;
