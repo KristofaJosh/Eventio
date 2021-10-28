@@ -1,1 +1,1 @@
-export { ReactComponent as IconEyeOpen } from './eyeOpen.svg';
+export { ReactComponent as IconEyeOpen } from "./eyeOpen.svg";
