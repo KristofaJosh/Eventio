@@ -32,9 +32,12 @@ const AppRoot = () => {
 
                 <RoundButton>23</RoundButton>
                 <Tag>louis andrew</Tag>
+                <Tag>louis andrew Chrissy</Tag>
+                <Tag noBack>louis andrew</Tag>
                 <AccountInitials name="tom watts" />
                 <AccountInitials name="tom watts" small />
                 <AccountInitials name="chris josh" small />
+                <AccountInitials name="tom watts" small />
                 <AccountInitials name="" />
                 <AccountInitials name="c d" />
                 <DeleteEventButton />

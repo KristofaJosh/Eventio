@@ -4,8 +4,20 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 16px;
     min-height: 31px;
     min-width: 80px;
     border-radius: 100px;
+    text-transform: capitalize;
+
+    > p {
+        font-size: var(--f14);
+        height: var(--f14);
+        line-height: 1;
+    }
+
+    &__noBack {
+        background-color: transparent;
+        border: 2px solid var(--grey);
+    }
 }
