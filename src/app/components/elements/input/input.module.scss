@@ -1,0 +1,57 @@
+$color-inactive: #dae1e7;
+$color-active: var(--black);
+$color-label: #c9ced3;
+
+.input {
+    &__wrapper {
+        height: 43px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+
+        &__inputContainer {
+            width: 100%;
+        }
+    }
+
+    &__label {
+        transition: top 0.5s;
+        color: $color-label;
+        position: absolute;
+        font-size: var(--f18);
+        line-height: 24px;
+        top: -5px;
+    }
+
+    &__input {
+        transition: border-bottom-color 0.8s;
+        font-family: Hind, sans-serif;
+        height: 24px;
+        border: none;
+        width: 100%;
+        outline: none;
+        font-size: var(--f18);
+        border-bottom: 1px solid $color-inactive;
+        line-height: 24px;
+
+        &:focus {
+            border-bottom: 1px solid $color-active;
+        }
+
+        &__hasValue {
+            top: -24px;
+            font-size: var(--f14);
+        }
+    }
+
+    &__hasError {
+        font-size: var(--f18);
+        color: var(--red);
+        line-height: 24px;
+
+        .input__input {
+            border-bottom: 1px solid var(--red);
+        }
+    }
+}
