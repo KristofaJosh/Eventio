@@ -16,12 +16,10 @@ const Input: FC<InputHTMLAttributes<HTMLInputElement> & { label: string; error?:
             <label htmlFor={name || id} className={`${style.input__label} ${_value ? style.input__input__hasValue : ""}`}>
                 {label}
             </label>
-            <div className={style.input__wrapper__inputContainer}>
-                <input id={name || id} value={_value} onChange={handleChange} className={`${style.input__input}`} type="text" {...props} />
-                <small className={style.input__hasError} aria-label={error}>
-                    {error}
-                </small>
-            </div>
+            <input id={name || id} value={_value} onChange={handleChange} className={`${style.input__wrapper__inputContainer} ${style.input__input}`} type="text" {...props} />
+            <small className={style.input__hasError} aria-label={error}>
+                {error}
+            </small>
         </div>
     );
 };

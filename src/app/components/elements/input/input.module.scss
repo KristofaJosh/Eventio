@@ -4,7 +4,6 @@ $color-label: #c9ced3;
 
 .input {
     &__wrapper {
-        height: 43px;
         position: relative;
         display: flex;
         align-items: flex-end;
@@ -12,6 +11,8 @@ $color-label: #c9ced3;
 
         &__inputContainer {
             width: 100%;
+            margin-top: 17px;
+            margin-bottom: 24px;
         }
     }
 
@@ -21,31 +22,37 @@ $color-label: #c9ced3;
         position: absolute;
         font-size: var(--f18);
         line-height: 24px;
-        top: -5px;
+        top: 22px;
     }
 
     &__input {
         transition: border-bottom-color 0.8s;
         font-family: Hind, sans-serif;
-        height: 24px;
+        height: 35px;
         border: none;
         width: 100%;
         outline: none;
         font-size: var(--f18);
         border-bottom: 1px solid $color-inactive;
-        line-height: 24px;
+
+        &__hasValue {
+            top: 0;
+            font-size: var(--f14);
+        }
 
         &:focus {
             border-bottom: 1px solid $color-active;
-        }
 
-        &__hasValue {
-            top: -24px;
-            font-size: var(--f14);
+            .input__input__hasValue {
+                top: 0;
+                font-size: var(--f14);
+            }
         }
     }
 
     &__hasError {
+        position: absolute;
+        bottom: -4px;
         font-size: var(--f18);
         color: var(--red);
         line-height: 24px;

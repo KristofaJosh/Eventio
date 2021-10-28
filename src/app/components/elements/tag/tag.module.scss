@@ -1,0 +1,11 @@
+.tag {
+    background-color: var(--grey);
+    color: var(--text-grey);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 31px;
+    min-width: 80px;
+    border-radius: 100px;
+}

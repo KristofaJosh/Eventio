@@ -1,0 +1,38 @@
+.initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    color: var(--text-grey);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: var(--f27);
+    text-transform: uppercase;
+    font-family: Hind, sans-serif;
+    text-align: center;
+    letter-spacing: -2px;
+
+    > p {
+        height: 34px;
+        position: relative;
+        left: -1px;
+    }
+
+    &__isSmall {
+        font-size: var(--f12);
+        width: 40px;
+
+        > p {
+            position: relative;
+            left: -1px;
+            text-align: center;
+            height: 17px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
