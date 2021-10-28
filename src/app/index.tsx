@@ -1,5 +1,5 @@
-import React from 'react';
-import Input from './components/elements/input';
+import React from "react";
+import Input from "./components/elements/input";
 
 const AppRoot = () => {
     const handleChange = (e: any) => {
