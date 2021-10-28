@@ -61,4 +61,27 @@ $color-label: #c9ced3;
             border-bottom: 1px solid var(--red);
         }
     }
+
+    &__password {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        > svg {
+            position: absolute;
+            right: 0;
+            bottom: 35px;
+            cursor: pointer;
+        }
+
+        &_showing {
+            > path {
+                fill: var(--text-grey);
+            }
+        }
+
+        .input__wrapper__inputContainer {
+            padding-right: 27px;
+        }
+    }
 }

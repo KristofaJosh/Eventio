@@ -31,7 +31,7 @@ type BtnType = ButtonHTMLAttributes<HTMLButtonElement> & { size?: "small" | "nor
 const Button: FC<BtnType> = ({ type, size = "normal", text, loading, btnType = "primary", disabled, ...props }) => {
     return (
         // eslint-disable-next-line react/button-has-type
-        <button className={`${style.button} ${getBtnSize(size)} ${getBtnStyle(btnType)} ${disabled ? style.button__btnSoft : ""}`} type={type} disabled={loading || disabled} {...props}>
+        <button aria-disabled={disabled} className={`${style.button} ${getBtnSize(size)} ${getBtnStyle(btnType)} ${loading || disabled ? style.button__busy : ""} ${disabled ? style.button__btnSoft : ""}`} type={type} aria-label={loading ? `${text} loading` : text} {...props}>
             {!disabled && loading ? <IconSpinner className={style.button__loader} /> : text}
         </button>
     );
@@ -39,7 +39,7 @@ const Button: FC<BtnType> = ({ type, size = "normal", text, loading, btnType = "
 
 export const RoundButton: FC<ButtonHTMLAttributes<HTMLButtonElement> & { btnType?: "primary" | "danger" | "soft" }> = ({ disabled, btnType, children, ...props }) => {
     return (
-        <button type="button" className={`${style.button} ${style.button__isRound} ${getBtnStyle(btnType)}`} disabled={disabled} {...props}>
+        <button type="button" className={`${style.button} ${style.button__isRound} ${getBtnStyle(btnType)}`} aria-disabled={disabled} disabled={disabled} {...props}>
             {children}
         </button>
     );

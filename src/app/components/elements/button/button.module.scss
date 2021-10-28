@@ -99,4 +99,8 @@ $btn-round-hover: #565d5a;
             }
         }
     }
+
+    &__busy {
+        pointer-events: none;
+    }
 }
