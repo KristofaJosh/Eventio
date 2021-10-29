@@ -33,7 +33,10 @@
         "release:patch": "standard-version --release-as patch",
         "release:major": "standard-version --release-as major",
         "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md,json}'",
-        "lint:css": "stylelint **/*.scss"
+        "lint:css": "stylelint **/*.scss",
+        "storybook": "start-storybook -p 6006 -s public",
+        "build-storybook": "build-storybook -s public",
+        "dev": "react-scripts start && start-storybook -p 6006 -s public"
     },
     "lint-staged": {
         "*.{scss,css}": [
@@ -66,6 +69,12 @@
         ]
     },
     "devDependencies": {
+        "@storybook/addon-actions": "^6.3.12",
+        "@storybook/addon-essentials": "^6.3.12",
+        "@storybook/addon-links": "^6.3.12",
+        "@storybook/node-logger": "^6.3.12",
+        "@storybook/preset-create-react-app": "^3.2.0",
+        "@storybook/react": "^6.3.12",
         "@typescript-eslint/eslint-plugin": "^5.2.0",
         "@typescript-eslint/parser": "^5.2.0",
         "eslint": "^7.32.0",
