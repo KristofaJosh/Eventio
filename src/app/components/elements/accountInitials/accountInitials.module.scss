@@ -16,16 +16,20 @@
     > p {
         position: relative;
         left: -1px;
+        color: inherit;
+        font-size: 37px;
     }
 
     &__isSmall {
         font-size: var(--f12);
         width: 40px;
+        height: 40px;
 
         > p {
             position: relative;
             left: -1px;
             text-align: center;
+            color: inherit;
         }
 
         @media screen and (min-width: 768px) {

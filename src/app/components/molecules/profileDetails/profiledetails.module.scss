@@ -1,0 +1,27 @@
+.profileDetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    &__image {
+        position: absolute;
+        top: 0;
+    }
+
+    &__texts {
+        height: 184px;
+        border-radius: 2px;
+        background-color: white;
+        text-align: center;
+        padding: 40px;
+        width: 100%;
+        margin-top: 60px;
+
+        > div {
+            margin-top: 60px;
+        }
+    }
+}
