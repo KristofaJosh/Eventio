@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/KristofaJosh/Eventio/compare/v0.3.1...v0.4.0) (2021-10-30)
+
+
+### UI
+
+* fix styling on profile detail and accountinitials component ([018c535](https://github.com/KristofaJosh/Eventio/commits018c535472bdecdf6d67b806ba3c276f3adcfa19))
+
+
+### Chore
+
+* create account handler ([c23c1ad](https://github.com/KristofaJosh/Eventio/commitsc23c1adb644b4f0790ddc91d5683c26f40a7c598))
+* create profile detail component ([975773f](https://github.com/KristofaJosh/Eventio/commits975773fbfcbc1b0fa03ba8278006584698e62059))
+
 ### [0.3.1](https://github.com/KristofaJosh/Eventio/compare/v0.3.0...v0.3.1) (2021-10-30)
 
 
