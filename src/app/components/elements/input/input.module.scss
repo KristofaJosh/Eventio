@@ -23,6 +23,7 @@ $color-label: #c9ced3;
         font-size: var(--f18);
         line-height: 24px;
         top: 22px;
+        text-transform: capitalize;
     }
 
     &__input {
@@ -48,6 +49,10 @@ $color-label: #c9ced3;
                 font-size: var(--f14);
             }
         }
+
+        &__hasError {
+            border-bottom: 1px solid var(--red) !important;
+        }
     }
 
     &__hasError {
@@ -56,10 +61,6 @@ $color-label: #c9ced3;
         font-size: var(--f18);
         color: var(--red);
         line-height: 24px;
-
-        .input__input {
-            border-bottom: 1px solid var(--red);
-        }
     }
 
     &__password {

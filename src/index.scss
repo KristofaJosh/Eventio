@@ -8,6 +8,7 @@
 
     // font sizes
     --f27: 1.688rem;
+    --f22: 1.375rem;
     --f18: 1.125rem;
     --f16: 1rem;
     --f14: 0.875rem;
@@ -114,4 +115,21 @@ body {
     font-family: Hind, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 24px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.logo {
+    width: 28px;
+    height: 27px;
 }

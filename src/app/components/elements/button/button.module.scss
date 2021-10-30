@@ -20,16 +20,16 @@ $btn-round-hover: #565d5a;
     letter-spacing: 1px;
     background-color: var(--black);
 
+    &:hover {
+        background-color: $btn-round-hover;
+    }
+
     &__isRound {
         height: 56px;
         width: 56px;
         border-radius: 28px;
         background-color: var(--black);
         box-shadow: 0 6px 9px #00000026;
-
-        &:hover {
-            background-color: $btn-round-hover;
-        }
     }
 
     &__btnPrimary {
@@ -66,15 +66,16 @@ $btn-round-hover: #565d5a;
 
     &__isSmall {
         min-width: 100px;
-        padding: 3px;
+        padding: 3px 15px;
         max-height: 32px;
         min-height: 32px;
     }
 
     &__loader {
-        width: 27px;
-        height: 27px;
+        width: 45px;
+        height: 45px;
         position: absolute;
+        cursor: progress;
     }
 
     &__deleteEvent {

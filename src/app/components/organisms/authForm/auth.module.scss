@@ -1,0 +1,44 @@
+.authForm {
+    &__heading {
+        text-align: center;
+
+        > h1 {
+            line-height: 48px;
+        }
+    }
+
+    &__form {
+        margin-top: 47px;
+    }
+
+    &__button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        text-align: center;
+
+        > span {
+            color: var(--text-grey);
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &__heading,
+        &__link {
+            text-align: unset;
+        }
+
+        &__button {
+            justify-content: flex-start;
+        }
+
+        &__link {
+            display: none;
+        }
+    }
+}
