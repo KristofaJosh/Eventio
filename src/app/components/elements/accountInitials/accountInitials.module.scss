@@ -7,25 +7,24 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    font-size: var(--f27);
     text-transform: uppercase;
     font-family: Hind, sans-serif;
     text-align: center;
     letter-spacing: -2px;
+    font-size: 37px;
 
     > p {
         position: relative;
         left: -1px;
         color: inherit;
-        font-size: 37px;
     }
 
     &__isSmall {
-        font-size: var(--f12);
         width: 40px;
         height: 40px;
 
         > p {
+            font-size: var(--f12);
             position: relative;
             left: -1px;
             text-align: center;
