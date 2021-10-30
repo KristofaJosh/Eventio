@@ -1,6 +1,5 @@
 .tag {
     background-color: var(--grey);
-    color: var(--text-grey);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +14,7 @@
         font-size: var(--f14);
         height: var(--f14);
         line-height: 1.3;
+        color: var(--text-grey);
     }
 
     &__noBack {
