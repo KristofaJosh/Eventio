@@ -21,7 +21,7 @@ const Typography: TypographyBase = ({ text, children, weight, lighter, className
 
 const TextHeading: TextHeadingsComponent = ({ children, weight, level, lighter, text, className, ...rest }) => {
     const size = ["f28", "f18", "f16", "f14", "f12"];
-    return React.createElement(`h${level || 1}`, { ...rest, style: { fontWeight: weight, color: lighter ? "var(--text-grey)" : "inherit" }, className: `typography__text ${size[level - 1]} ${className ?? ""}` }, text || children);
+    return React.createElement(`h${level || 1}`, { ...rest, style: { fontWeight: weight, color: lighter ? "var(--text-grey)" : undefined }, className: `typography__text ${size[level - 1]} ${className ?? ""}` }, text || children);
 };
 
 Typography.Heading = TextHeading;
