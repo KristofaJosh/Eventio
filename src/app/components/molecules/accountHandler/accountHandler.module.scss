@@ -1,0 +1,12 @@
+.accountHandler {
+    display: flex;
+    align-items: center;
+
+    &__name {
+        display: flex;
+
+        > svg {
+            margin-left: 8px;
+        }
+    }
+}
