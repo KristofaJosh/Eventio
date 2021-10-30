@@ -4,7 +4,9 @@ import { EventCardType } from "./type";
 import { IconUser } from "../../../assets/icons";
 import style from "./eventdetail.module.scss";
 
-const EventGrid = ({ date, heading, author, description, views, action }: EventCardType) => {
+type EventGridType = EventCardType & { detail?: boolean };
+
+const EventGrid = ({ date, heading, author, description, views, action, detail = false }: EventGridType) => {
     return (
         <div className={`${style.eventDetail} ${style.eventDetail__grid}`}>
             <Typography className={style.eventDetail__date} level="f14">
@@ -21,7 +23,7 @@ const EventGrid = ({ date, heading, author, description, views, action }: EventC
                 </Typography>
             </div>
             <div className={style.eventDetail__description}>
-                <Typography className="text-truncate_2">{description}</Typography>
+                <Typography className={!detail ? "text-truncate_2" : ""}>{description}</Typography>
             </div>
             <div className={style.eventDetail__grid__footer}>
                 <div className={style.eventDetail__grid__footer__views}>
