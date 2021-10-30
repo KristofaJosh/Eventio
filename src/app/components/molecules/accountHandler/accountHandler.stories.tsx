@@ -6,6 +6,9 @@ export default {
     component: AccountHandler,
 } as ComponentMeta<typeof AccountHandler>;
 
-const Template: ComponentStory<typeof AccountHandler> = () => <AccountHandler />;
+const Template: ComponentStory<typeof AccountHandler> = (args) => <AccountHandler {...args} />;
 
 export const Account = Template.bind({});
+Account.args = {
+    name: "great monday",
+};
