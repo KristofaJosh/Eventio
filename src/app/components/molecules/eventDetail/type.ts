@@ -1,12 +1,10 @@
-import Button from "app/components/elements/button";
-
-type actionBtn = typeof Button;
+import React from "react";
 
 export type EventCardType = {
     date: string;
     heading: string;
     author: string;
-    shortText: string;
-    action: actionBtn;
+    description: string;
+    action: React.ReactNode;
     views: string;
 };

@@ -4,31 +4,33 @@ import { EventCardType } from "./type";
 import { IconUser } from "../../../assets/icons";
 import style from "./eventdetail.module.scss";
 
-const EventGrid = ({ date, heading, author, shortText, views, action }: EventCardType) => {
+const EventGrid = ({ date, heading, author, description, views, action }: EventCardType) => {
     return (
-        <div className={style.eventDetail}>
-            <Typography level="f14" lighter>
+        <div className={`${style.eventDetail} ${style.eventDetail__grid}`}>
+            <Typography className={style.eventDetail__date} level="f14">
                 {date}
             </Typography>
-            <div>
-                <Typography level="f22" lighter>
-                    {heading}
-                </Typography>
+            <div className={style.eventDetail__grid__heading}>
+                <div>
+                    <Typography level="f22" className="text-truncate_2">
+                        {heading}
+                    </Typography>
+                </div>
                 <Typography level="f14" lighter>
                     {author}
                 </Typography>
             </div>
-            <div>
-                <Typography>{shortText}</Typography>
+            <div className={style.eventDetail__description}>
+                <Typography className="text-truncate_2">{description}</Typography>
             </div>
-            <div>
-                <div>
+            <div className={style.eventDetail__grid__footer}>
+                <div className={style.eventDetail__grid__footer__views}>
                     <IconUser />
                     <Typography level="f14" lighter>
                         {views}
                     </Typography>
                 </div>
-                <div>{action}</div>
+                {action}
             </div>
         </div>
     );

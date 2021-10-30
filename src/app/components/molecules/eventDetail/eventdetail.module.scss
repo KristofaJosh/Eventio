@@ -1,5 +1,116 @@
 .eventDetail {
+    border-radius: 2px;
+    box-shadow: 0 2px 3px #0000001c;
+    font-weight: 400;
+
     &__date {
-        margin-bottom: 10px;
+        grid-area: date;
+        color: #cacdd0;
+    }
+
+    &__author {
+        grid-area: author;
+    }
+
+    &__description {
+        max-width: 260px;
+
+        > p {
+            color: #949ea8;
+        }
+    }
+
+    &__grid {
+        max-width: 390px;
+        padding: 24px;
+
+        .eventDetail__description {
+            margin-top: 26px;
+        }
+
+        &__heading {
+            > div:first-child {
+                padding-top: 20px;
+                padding-bottom: 8px;
+            }
+
+            > p:first-child {
+                position: relative;
+                top: -10px;
+            }
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 23px;
+
+            &__views {
+                display: flex;
+                align-items: center;
+
+                > svg {
+                    margin-right: 8px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 765px) {
+            padding: 32px;
+
+            &__heading {
+                > div:first-child {
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+
+    &__list {
+        display: grid;
+        align-items: center;
+        padding: 20px 32px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "description"
+            "date"
+            "footer";
+        gap: 6px;
+        justify-content: space-between;
+
+        &__author {
+            display: none;
+        }
+
+        .eventDetail__description {
+            grid-area: description;
+            max-width: 100%;
+        }
+
+        &__footer {
+            grid-area: footer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__action {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media screen and (min-width: 950px) {
+            grid-template-columns: minmax(auto, 336px) minmax(auto, 336px) 100px 150px 200px;
+            grid-template-areas: "title description author date footer";
+            gap: 6px;
+
+            &__author {
+                display: block;
+            }
+        }
     }
 }
