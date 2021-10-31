@@ -7,13 +7,16 @@ import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import AppRoot from "./app";
 import store, { persistor } from "./app/store";
+import ErrorBoundary from "./app/errorBoundary";
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
             <PersistGate persistor={persistor}>
                 <BrowserRouter>
-                    <AppRoot />
+                    <ErrorBoundary>
+                        <AppRoot />
+                    </ErrorBoundary>
                 </BrowserRouter>
             </PersistGate>
         </Provider>

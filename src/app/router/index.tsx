@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent-props */
 import React, { FC } from "react";
 import { Route, RouteComponentProps, Redirect } from "react-router-dom";
 import { SiteRouteT } from "./routes";
