@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent-props */
 import React, { useState } from "react";
 import { IconGrid, IconList } from "../../../assets/icons";
 import style from "./eventnav.module.scss";
