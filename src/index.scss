@@ -132,6 +132,13 @@ h6 {
     color: var(--black);
 }
 
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
 .logo {
     width: 28px;
     height: 27px;

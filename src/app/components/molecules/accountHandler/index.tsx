@@ -3,12 +3,20 @@ import Typography from "app/components/elements/typography";
 import style from "./accountHandler.module.scss";
 import AccountInitials from "../../elements/accountInitials";
 import { IconAngleDown } from "../../../assets/icons";
-import useOnClickOutside from "../../../../utils/hooks/useOnClickOutside";
+import useOnClickOutside from "../../../../hooks/useOnClickOutside";
+import { useAppDispatch } from "../../../store";
+import { resetAuthState } from "../../../store/reducers/auth/auth.reducer";
 
 const AccountHandler = ({ name }: { name: string }) => {
     const { setVisible, visible, ref } = useOnClickOutside(false);
+    const dispatch = useAppDispatch();
 
-    const handleSelection = () => {};
+    const handleSelection = (e: React.MouseEvent<HTMLDivElement>) => {
+        const el: any = e.target;
+        if (el.id === "log-out") {
+            dispatch(resetAuthState());
+        }
+    };
 
     return (
         <div className={style.accountHandler}>

@@ -19,12 +19,17 @@
 
     &__link {
         text-align: center;
+        margin-top: 10px;
 
-        > span {
+        > a {
             color: var(--text-grey);
             font-weight: 500;
             cursor: pointer;
         }
+    }
+
+    &__hasError {
+        color: var(--red) !important;
     }
 
     @media screen and (min-width: 768px) {

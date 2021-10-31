@@ -1,5 +1,6 @@
 import Typography from "app/components/elements/typography";
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import style from "./authTemplate.module.scss";
 
 const renderLink = (_formName: any) => {
@@ -7,14 +8,14 @@ const renderLink = (_formName: any) => {
     if (formName.type.name === "RegisterForm") {
         return (
             <Typography lighter className={style.auth_template__form__link}>
-                Already have an account? <span>SIGN IN</span>
+                Already have an account? <Link to="/login">SIGN IN</Link>
             </Typography>
         );
     }
     if (formName.type.name === "SignInForm") {
         return (
             <Typography lighter className={style.auth_template__form__link}>
-                Don&apos;t have account? <span>SIGN UP</span>
+                Don&apos;t have account? <Link to="/register">SIGN UP</Link>
             </Typography>
         );
     }

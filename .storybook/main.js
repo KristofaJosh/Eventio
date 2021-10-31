@@ -1,4 +1,7 @@
 /* eslint-disable */
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+
 const path = require("path");
 
 module.exports = {
@@ -14,4 +17,5 @@ module.exports = {
 
         return config;
     },
+    addDecorator: (story) => <BrowserRouter>{story()}</BrowserRouter>,
 };

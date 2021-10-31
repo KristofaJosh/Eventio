@@ -1,13 +1,20 @@
-import React from "react";
-import LoginPage from "./pages/auth/login";
-// import RegisterPage from "./pages/auth/register/registerPage";
+import React, { Suspense } from "react";
+import { Switch } from "react-router-dom";
+import RenderRoute from "./router";
+import { appRoutes } from "./router/routes";
+import { useAppSelector } from "./store";
 
 const AppRoot = () => {
+    const { isAuthenticated } = useAppSelector((state) => state.auth);
+
     return (
-        <div className="App">
-            <LoginPage />
-            {/*<RegisterPage />*/}
-        </div>
+        <Suspense fallback="...">
+            <Switch>
+                {appRoutes.map((el, i) => (
+                    <RenderRoute key={i.toString()} authenticated={isAuthenticated} {...el} />
+                ))}
+            </Switch>
+        </Suspense>
     );
 };
 
