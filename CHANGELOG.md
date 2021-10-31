@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/KristofaJosh/Eventio/compare/v1.0.0...v1.0.1) (2021-10-31)
+
+
+### Bug Fixes
+
+* template did not rendere error page correctly ([ead2c32](https://github.com/KristofaJosh/Eventio/commitsead2c32d37261cd43df3d81b8cc3d04a67dd30d5))
+
 ## [1.0.0](https://github.com/KristofaJosh/Eventio/compare/v0.4.0...v1.0.0) (2021-10-31)
 
 
