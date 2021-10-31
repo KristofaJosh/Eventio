@@ -39,6 +39,13 @@
         }
     }
 
+    &__vader {
+        position: absolute;
+        width: 446px;
+        height: 443px;
+        left: -40px;
+    }
+
     @media screen and (min-width: 810px) {
         grid-template-columns: 480px 1fr;
 
@@ -81,6 +88,10 @@
                     line-height: 42px;
                 }
             }
+        }
+
+        &__vader {
+            left: 365px;
         }
     }
 }

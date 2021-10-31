@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
-import { Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import RenderRoute from "./router";
 import { appRoutes } from "./router/routes";
 import { useAppSelector } from "./store";
+import Notfound from "./pages/dashboard/notfound";
 
 const AppRoot = () => {
     const { isAuthenticated } = useAppSelector((state) => state.auth);
@@ -13,6 +14,7 @@ const AppRoot = () => {
                 {appRoutes.map((el, i) => (
                     <RenderRoute key={i.toString()} authenticated={isAuthenticated} {...el} />
                 ))}
+                <Route path="*" component={Notfound} />
             </Switch>
         </Suspense>
     );
