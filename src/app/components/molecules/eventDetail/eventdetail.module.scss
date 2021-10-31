@@ -2,6 +2,7 @@
     border-radius: 2px;
     box-shadow: 0 2px 3px #0000001c;
     font-weight: 400;
+    background-color: white;
 
     &__date {
         grid-area: date;
@@ -29,6 +30,8 @@
         }
 
         &__heading {
+            cursor: pointer;
+
             > div:first-child {
                 padding-top: 20px;
                 padding-bottom: 8px;
@@ -70,6 +73,7 @@
     }
 
     &__list {
+        cursor: pointer;
         display: grid;
         align-items: center;
         padding: 20px 32px;
@@ -81,6 +85,10 @@
             "footer";
         gap: 6px;
         justify-content: space-between;
+
+        &__heading {
+            cursor: pointer;
+        }
 
         &__author {
             display: none;

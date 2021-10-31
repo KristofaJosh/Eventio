@@ -1,10 +1,7 @@
-import React from "react";
+import { eventResponseType } from "../../../pages/dashboard/types";
 
 export type EventCardType = {
-    date: string;
-    heading: string;
-    author: string;
-    description: string;
-    action: React.ReactNode;
-    views: string;
+    event: eventResponseType;
+    // eslint-disable-next-line no-unused-vars
+    toggleEvent: ({ data }: { data: eventResponseType }) => void;
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import PageNotFound from "../../components/molecules/error/pageNotFound";
-import AuthTemplate from "../../templates/auth/auth.template";
+import PageNotFound from "../components/molecules/error/pageNotFound";
+import AuthTemplate from "../templates/auth/auth.template";
 
 const Notfound = () => {
     return (

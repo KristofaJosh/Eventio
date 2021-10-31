@@ -20,13 +20,15 @@
     &__options {
         position: absolute;
         top: 45px;
-        left: 0;
+        right: 0;
         /* stylelint-disable color-hex-length */
         box-shadow: 0 5px 15px #00000033;
         border-radius: 14px;
         padding: 16px;
         text-transform: capitalize;
         width: calc(100% + 20px);
+        background-color: white;
+        min-width: 127px;
 
         p {
             color: var(--text-grey);
@@ -49,6 +51,12 @@
                 display: block;
                 margin-right: 8px;
             }
+        }
+
+        &__options {
+            left: 0;
+            right: unset;
+            min-width: 0;
         }
     }
 }

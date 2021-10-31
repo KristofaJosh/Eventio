@@ -3,6 +3,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { FLUSH, PAUSE, PERSIST, persistReducer, persistStore, PURGE, REGISTER, REHYDRATE } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { rootReducer, RootState } from "./reducers";
+import { requestMiddleWare } from "./middlewares/requestMiddleware";
 
 const persistConfig = {
     key: "eventio_cache",
@@ -18,7 +19,7 @@ const store = configureStore({
             serializableCheck: {
                 ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
             },
-        }),
+        }).concat([requestMiddleWare]),
 });
 
 export const persistor = persistStore(store);

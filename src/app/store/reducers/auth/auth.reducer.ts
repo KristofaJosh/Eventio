@@ -6,10 +6,12 @@ type authInitType = {
     loading: boolean;
     error: any;
     session: {
+        id: string;
         token: string;
-        firstName: "";
-        lastName: "";
-        email: "";
+        refreshToken: string;
+        firstName: string;
+        lastName: string;
+        email: string;
     };
 };
 
@@ -26,6 +28,10 @@ export const authSlice = createSlice({
         authenticate: (state, action) => {
             state.isAuthenticated = true;
             state.session = action.payload;
+        },
+        updateToken: (state, action) => {
+            state.session.token = action.payload.authorization;
+            state.session.refreshToken = action.payload["refresh-token"];
         },
         resetAuthState: (state) => {
             state.isAuthenticated = false;
@@ -57,6 +63,6 @@ export const authSlice = createSlice({
     },
 });
 
-export const { resetAuthState } = authSlice.actions;
+export const { resetAuthState, updateToken } = authSlice.actions;
 
 export default authSlice.reducer;

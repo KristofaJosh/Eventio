@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import RenderRoute from "./router";
 import { appRoutes } from "./router/routes";
 import { useAppSelector } from "./store";
-import Notfound from "./pages/dashboard/notfound";
+import Notfound from "./pages/notfound";
 
 const AppRoot = () => {
     const { isAuthenticated } = useAppSelector((state) => state.auth);

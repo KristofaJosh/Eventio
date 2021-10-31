@@ -7,3 +7,4 @@ export { ReactComponent as IconDelete } from "./delete.svg";
 export { ReactComponent as IconCheck } from "./check.svg";
 export { ReactComponent as IconUser } from "./user.svg";
 export { ReactComponent as IconAngleDown } from "./angledown.svg";
+export { ReactComponent as IconClose } from "./close.svg";

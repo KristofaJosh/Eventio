@@ -2,6 +2,7 @@
 
 :root {
     // colors
+    --background: #f2f2f2;
     --black: #323c46;
     --green: #22d486;
     --red: #ff4081;
@@ -117,6 +118,7 @@ body {
     font-family: Hind, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background);
 }
 
 p,
@@ -144,6 +146,12 @@ a {
     height: 27px;
 }
 
+.floating-btn {
+    position: fixed !important;
+    bottom: 32px;
+    right: 32px;
+}
+
 @mixin text-truncate {
     display: block;
     display: -webkit-box;
@@ -160,4 +168,16 @@ a {
         -webkit-line-clamp: 2;
     }
 }
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
 /* stylelint-enable */

@@ -5,6 +5,7 @@ const eventioRequest = axios.create({
     headers: {
         APIKey: process.env.REACT_APP_API_KEY as string,
     },
+    timeout: 30000,
 });
 
 export default eventioRequest;

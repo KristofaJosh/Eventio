@@ -39,10 +39,10 @@ const SignInForm = () => {
                     Sign in to Eventio.
                 </Typography.Heading>
                 <Typography lighter level="f18" className={error ? style.authForm__hasError : ""}>
-                    {error ? "Oops! That email and password combination is not valid." : "Enter your details below."}
+                    {error === "User.InvalidPassword" ? "Oops! That email and password combination is not valid." : error || "Enter your details below."}
                 </Typography>
             </div>
-            <form onSubmit={signingController.handleSubmit} className={style.authForm__form}>
+            <form onSubmit={signingController.handleSubmit}>
                 <Input label="email" {...formikInputListener("email", signingController)} errorTextHidden />
                 <Input.Password label="password" {...formikInputListener("password", signingController)} errorTextHidden />
                 <Typography lighter className={style.authForm__link}>
