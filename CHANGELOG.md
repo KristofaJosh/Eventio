@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/KristofaJosh/Eventio/compare/v0.4.0...v1.0.0) (2021-10-31)
+
+
+### Features
+
+* login and authorized state ([8f89f89](https://github.com/KristofaJosh/Eventio/commits8f89f895f2a788e68a56244b8cdb1fa221a162fb))
+
 ## [0.4.0](https://github.com/KristofaJosh/Eventio/compare/v0.3.1...v0.4.0) (2021-10-30)
 
 
