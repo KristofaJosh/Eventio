@@ -46,8 +46,7 @@
         "format": "prettier --write 'src/**/*.{js,ts,tsx,css,md,json}'",
         "lint:css": "stylelint **/*.scss",
         "storybook": "start-storybook -p 6006 -s public",
-        "build-storybook": "build-storybook -s public",
-        "dev": "react-scripts start && start-storybook -p 6006 -s public"
+        "build-storybook": "build-storybook -s public"
     },
     "lint-staged": {
         "*.{scss,css}": [

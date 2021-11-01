@@ -3,7 +3,7 @@ import Typography from "app/components/elements/typography";
 import style from "./accountHandler.module.scss";
 import AccountInitials from "../../elements/accountInitials";
 import { IconAngleDown } from "../../../assets/icons";
-import useOnClickOutside from "../../../../hooks/useOnClickOutside";
+import useOnClickOutside from "../../../hooks/useOnClickOutside";
 import { useAppDispatch } from "../../../store";
 import { resetAuthState } from "../../../store/reducers/auth/auth.reducer";
 

@@ -58,11 +58,11 @@ const EventNav = React.memo(({ onEventClick, onViewClick }: { onEventClick: (res
                 </select>
             </div>
             <div role="presentation" className={style.eventNav__navs}>
-                <div onClick={handleViewClick} id="grid" role="presentation" aria-label="grid view">
-                    <IconGrid className={`${view === "grid" ? style.eventNav__navs_isActive : ""}`} />
+                <div onClick={handleViewClick} id="grid" role="presentation">
+                    <IconGrid className={`${view === "grid" ? style.eventNav__navs_isActive : ""}`} aria-label="grid view" />
                 </div>
-                <div onClick={handleViewClick} id="list" role="presentation" aria-label="list view">
-                    <IconList className={`${view === "list" ? style.eventNav__navs_isActive : ""}`} />
+                <div onClick={handleViewClick} id="list" role="presentation">
+                    <IconList className={`${view === "list" ? style.eventNav__navs_isActive : ""}`} aria-label="list view" />
                 </div>
             </div>
         </nav>
