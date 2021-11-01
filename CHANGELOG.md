@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/KristofaJosh/Eventio/compare/v1.0.0...v1.2.0) (2021-11-01)
+
+
+### Features
+
+* create event list ([2dafdce](https://github.com/KristofaJosh/Eventio/commits2dafdce50134c1c4be4bae302643e29a39f06a66))
+* create event list ([6291615](https://github.com/KristofaJosh/Eventio/commits6291615956b67e20558f617afc4732de343ea464))
+* create events ([d88e98e](https://github.com/KristofaJosh/Eventio/commitsd88e98e3de30568289ccf47719235f1e9e6e6958))
+
+
+### Bug Fixes
+
+* minor component fixes ([0393cd5](https://github.com/KristofaJosh/Eventio/commits0393cd59de97a47019fe6b83d4e73a96903303b6))
+* template did not rendere error page correctly ([ead2c32](https://github.com/KristofaJosh/Eventio/commitsead2c32d37261cd43df3d81b8cc3d04a67dd30d5))
+
+
+### Chore
+
+* **release:** 1.0.1 ([f8eb7bc](https://github.com/KristofaJosh/Eventio/commitsf8eb7bcc1351358403986c6b99bbb1e2b07a02bc))
+
 ## [1.1.0](https://github.com/KristofaJosh/Eventio/compare/v1.0.0...v1.1.0) (2021-10-31)
 
 
