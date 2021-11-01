@@ -6,6 +6,8 @@ This app project structure follows [atomic design methodology](https://atomicdes
 
 To run this app:
 
+create a ```.env``` file using the sample ```.env.sample``` file
+
 ##### Run locally?
 
 ```shell
