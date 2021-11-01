@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/KristofaJosh/Eventio/compare/v1.2.0...v1.2.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* leave event logic did not accomodate 0 index ([ac7d31b](https://github.com/KristofaJosh/Eventio/commitsac7d31be592dad3ae26761d7c462e7400f825af6))
+
 ## [1.2.0](https://github.com/KristofaJosh/Eventio/compare/v1.0.0...v1.2.0) (2021-11-01)
 
 
