@@ -2,14 +2,20 @@
 
 #### Try [Eventio](https://eventio-chrisjosh.netlify.app/) here
 
-Run locally?
+This app project structure follows [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), you can read more on it if you are not familiar.
+
+To run this app:
+
+##### Run locally?
 
 ```shell
 yarn
 yarn start
 ```
 
-See documentation?
+##### See documentation? 
+make sure you have run ```yarn``` then
 ```shell
 yarn storybook
 ```
+Documentation includes component testing and accessibility testing
