@@ -20,6 +20,7 @@ class ErrorBoundary extends Component<any, { hasError: boolean; error: any; erro
 
     render() {
         if (this.state.hasError) {
+            // console.log(this.state);
             // You can render any custom fallback UI
             return (
                 <div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>

@@ -44,6 +44,14 @@
 
             &__heading {
                 text-align: center;
+
+                > h1 {
+                    line-height: 48px;
+                }
+
+                > p {
+                    margin-bottom: 40px;
+                }
             }
 
             &__btn {
@@ -67,5 +75,9 @@
                 margin-bottom: 140px;
             }
         }
+    }
+
+    &__hasError {
+        color: var(--red) !important;
     }
 }

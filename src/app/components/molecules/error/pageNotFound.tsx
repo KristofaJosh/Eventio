@@ -4,7 +4,10 @@ import Typography from "../../elements/typography";
 import Button from "../../elements/button";
 
 const PageNotFound = () => {
-    const handleRefreshPage = () => {};
+    const handleRefreshPage = () => {
+        window.location.replace("/dashboard");
+    };
+
     return (
         <div className={style.error}>
             <Typography.Heading level={1} weight={400} text="404 Error - page not found" />

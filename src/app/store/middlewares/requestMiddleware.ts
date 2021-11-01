@@ -73,7 +73,7 @@ export const requestMiddleWare: Middleware =
                             axios.request(newConfig).then((response) => response);
                         })
                         .catch(() => {
-                            // dispatch(resetAuthState());
+                            dispatch(resetAuthState());
                         });
                 }
                 if (error?.response?.status === 401) {

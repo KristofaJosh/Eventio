@@ -19,6 +19,6 @@ export const appRoutes: Array<SiteRouteT> = [
 ];
 
 export const dashboardRoutes: Array<SiteRouteT> = [
-    { access: "private", component: DashboardEvents, exact: true, path: "/" },
-    { access: "private", component: RegisterPage, exact: true, path: "/profile" },
+    { access: "private", component: DashboardEvents, exact: true, path: ["/", "/dashboard"] },
+    { access: "private", component: RegisterPage, exact: true, path: "/dashboard/profile" },
 ];

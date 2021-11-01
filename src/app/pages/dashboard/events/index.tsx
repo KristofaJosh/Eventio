@@ -58,7 +58,7 @@ const DashboardEvents = () => {
     if (loading) {
         return (
             <div className={style.events__loader}>
-                <IconSpinner />
+                <IconSpinner style={{ width: 150, height: 150 }} />
             </div>
         );
     }
