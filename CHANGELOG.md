@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.3](https://github.com/KristofaJosh/Eventio/compare/v1.2.2...v1.2.3) (2021-11-01)
+
+
+### Bug Fixes
+
+* code clean up ([b42d42c](https://github.com/KristofaJosh/Eventio/commitsb42d42c8a56962f69bdf542114f0eb561c6709ed))
+* code clean up ([8650bbd](https://github.com/KristofaJosh/Eventio/commits8650bbdc6ad64e9fd86cab3a5ec5bb13eae2b48c))
+* signup did not show on auth template ([a858d1b](https://github.com/KristofaJosh/Eventio/commitsa858d1bc3b7f6c254f068ab7b6272a3b02ec5e83))
+
+
+### Chore
+
+* **release:** 1.2.2 ([a2c9183](https://github.com/KristofaJosh/Eventio/commitsa2c9183b9cbfa484b0e2370442fad68c635676a6))
+
 ### [1.2.2](https://github.com/KristofaJosh/Eventio/compare/v1.2.1...v1.2.2) (2021-11-01)
 
 

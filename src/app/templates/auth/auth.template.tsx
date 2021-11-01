@@ -1,39 +1,10 @@
 import Typography from "app/components/elements/typography";
 import React, { FC } from "react";
-import { Link } from "react-router-dom";
 import style from "./authTemplate.module.scss";
-import vader from "../../assets/images/vader.png";
 import lb from "../../assets/images/logo.png";
 import lw from "../../assets/images/logo-white.png";
 
-const renderLink = (_formName: any) => {
-    const formName = _formName[0];
-    if (formName.type.name === "RegisterForm") {
-        return (
-            <Typography lighter className={style.auth_template__form__link}>
-                Already have an account? <Link to="/login">SIGN IN</Link>
-            </Typography>
-        );
-    }
-    if (formName.type.name === "SignInForm") {
-        return (
-            <Typography lighter className={style.auth_template__form__link}>
-                Don&apos;t have account? <Link to="/register">SIGN UP</Link>
-            </Typography>
-        );
-    }
-    return null;
-};
-
-const renderVader = (_formName: any) => {
-    const formName = _formName[0];
-    if (["PageNotFound", "SomethingWentWrong"].includes(formName.type.name)) {
-        return <img src={vader} className={style.auth_template__vader} alt="" />;
-    }
-    return null;
-};
-
-const AuthTemplate: FC = ({ children }) => {
+const AuthTemplate: FC<{ link?: any; background?: any }> = ({ children, background, link }) => {
     const component = React.Children.map(children, (child: any) => {
         if (typeof child.type !== "function") {
             return <div>Please use a functional component</div>;
@@ -56,10 +27,12 @@ const AuthTemplate: FC = ({ children }) => {
             <div className={style.auth_template__form}>
                 <div className={style.auth_template__form__top}>
                     <img className="logo" src={lb} alt="E." />
-                    {renderLink(component)}
+                    <Typography lighter className={style.auth_template__form__link}>
+                        {link}
+                    </Typography>
                 </div>
                 <div className={style.auth_template__form__content}>
-                    {renderVader(component)}
+                    {background && <img src={background} className={style.auth_template__vader} alt="" />}
                     {component}
                 </div>
             </div>
