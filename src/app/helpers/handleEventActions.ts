@@ -15,7 +15,7 @@ export const handleEventActions = (
     setBtnLoading: (res: boolean) => void,
 ) => {
     // eslint-disable-next-line no-nested-ternary
-    const text = auth.session.id === event.owner.id ? "edit" : checkAttendant(auth, event.attendees) > 0 ? "leave" : "join";
+    const text = auth.session.id === event.owner.id ? "edit" : checkAttendant(auth, event.attendees) >= 0 ? "leave" : "join";
 
     const failure = () => {
         setBtnLoading(false);
