@@ -82,7 +82,6 @@ const DashboardEvents = () => {
                         if (view === "list") {
                             return <EventList key={el.id} toggleEvent={toggleEvent} event={el} />;
                         }
-
                         return <EventGrid key={el.id} toggleEvent={toggleEvent} event={el} />;
                     })}
                     <CreateEventForm />

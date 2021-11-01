@@ -60,7 +60,7 @@ const CreateEventForm = () => {
 
     return (
         <div>
-            <RoundButton className="floating-btn" onClick={() => setShowForm(!showForm)}>
+            <RoundButton className="floating-btn" onClick={() => setShowForm(!showForm)} aria-label="create event">
                 <IconAdd />
             </RoundButton>
             {showForm && (
