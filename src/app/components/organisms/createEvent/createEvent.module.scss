@@ -1,0 +1,83 @@
+.createEvent {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: var(--background);
+    overflow: auto;
+
+    &__content {
+        width: 100%;
+        max-width: 1440px;
+        padding: 24px;
+        margin: auto;
+
+        &_body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_form {
+            background-color: white;
+            border-radius: 2px;
+            width: 100%;
+            max-width: 480px;
+            padding: 41px 32px;
+            box-shadow: 0 2px 3px #0000001c;
+
+            &__counter {
+                position: relative;
+                border-bottom: 1px solid var(--black);
+                padding: 10px 0;
+                text-align: left;
+                height: 76px;
+                margin-bottom: 24px;
+
+                > p {
+                    position: absolute;
+                    bottom: 6px;
+                    font-size: var(--f18);
+                }
+            }
+
+            &__heading {
+                text-align: center;
+
+                > h1 {
+                    line-height: 48px;
+                }
+
+                > p {
+                    margin-bottom: 40px;
+                }
+            }
+
+            &__btn {
+                margin-top: 26px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &_heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 30px 49px;
+
+            &_heading {
+                margin-bottom: 140px;
+            }
+        }
+    }
+
+    &__hasError {
+        color: var(--red) !important;
+    }
+}

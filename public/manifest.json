@@ -1,27 +1,27 @@
 {
-  "short_name": "Eventio",
-  "name": "Eventio",
-  "description": "A web app that allows registered users to sign up for and create events",
-  "version": "1.0.0",
-  "icons": [
-    {
-      "src": "logo.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Eventio",
+    "name": "Eventio",
+    "description": "A web app that allows registered users to sign up for and create events",
+    "version": "1.0.0",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "logo.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }

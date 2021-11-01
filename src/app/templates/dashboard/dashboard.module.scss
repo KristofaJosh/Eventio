@@ -1,0 +1,23 @@
+.dashboard {
+    width: 100%;
+    max-width: 1440px;
+    padding: 24px;
+    margin: auto;
+    position: relative;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 30px 49px;
+    }
+}

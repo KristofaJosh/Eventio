@@ -1,13 +1,26 @@
+/* stylelint-disable */
+
 :root {
+    // colors
+    --background: #f2f2f2;
     --black: #323c46;
     --green: #22d486;
-    --red: #e73370;
-    --grey: #c4c9d1;
+    --red: #ff4081;
+    --grey: #d9dce1;
+    --text-grey: #949ea8;
+
+    // font sizes
+    --f27: 1.688rem;
+    --f22: 1.375rem;
+    --f18: 1.125rem;
+    --f16: 1rem;
+    --f14: 0.875rem;
+    --f12: 0.75rem;
 }
 
 @font-face {
     font-family: Hind;
-    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Light.ttf') format('truetype');
+    src: local("Hind"), url("./app/assets/fonts/Hind/Hind-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
     font-display: block;
@@ -15,7 +28,7 @@
 
 @font-face {
     font-family: Hind;
-    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Regular.ttf') format('truetype');
+    src: local("Hind"), url("./app/assets/fonts/Hind/Hind-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -23,7 +36,7 @@
 
 @font-face {
     font-family: Hind;
-    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Medium.ttf') format('truetype');
+    src: local("Hind"), url("./app/assets/fonts/Hind/Hind-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
     font-display: block;
@@ -31,7 +44,7 @@
 
 @font-face {
     font-family: Hind;
-    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-SemiBold.ttf') format('truetype');
+    src: local("Hind"), url("./app/assets/fonts/Hind/Hind-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-display: block;
@@ -39,7 +52,7 @@
 
 @font-face {
     font-family: Hind;
-    src: local('Hind'), url('./app/assets/fonts/Hind/Hind-Bold.ttf') format('truetype');
+    src: local("Hind"), url("./app/assets/fonts/Hind/Hind-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: block;
@@ -47,7 +60,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
     font-weight: 900;
     font-style: normal;
     font-display: block;
@@ -55,7 +68,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
     font-weight: 900;
     font-style: italic;
     font-display: block;
@@ -63,7 +76,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
     font-display: block;
@@ -71,7 +84,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
     font-weight: 900;
     font-style: italic;
     font-display: block;
@@ -79,7 +92,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
     font-weight: 400;
     font-style: italic;
     font-display: block;
@@ -87,7 +100,7 @@
 
 @font-face {
     font-family: Playfair;
-    src: local('Playfair Display'), url('./app/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+    src: local("Playfair Display"), url("./app/assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -105,4 +118,66 @@ body {
     font-family: Hind, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background);
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 24px;
+    font-family: inherit;
+    font-size: inherit;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.logo {
+    width: 28px;
+    height: 27px;
+}
+
+.floating-btn {
+    position: fixed !important;
+    bottom: 32px;
+    right: 32px;
+}
+
+@mixin text-truncate {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-truncate {
+    @include text-truncate();
+    &_2 {
+        @include text-truncate();
+        -webkit-line-clamp: 2;
+    }
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+/* stylelint-enable */

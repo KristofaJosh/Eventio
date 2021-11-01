@@ -16,8 +16,9 @@
     "rules": {
         "indent": "off",
         "linebreak-style": "off",
+        "react/jsx-indent": "off",
         "no-tabs": "off",
-        "quotes": ["error", "single"],
+        "quotes": ["error", "double"],
         "semi": ["error", "always"],
         "import/no-unresolved": "off",
         "import/extensions": "off",
@@ -26,6 +27,7 @@
         "react/prop-types": "off",
         "react/destructuring-assignment": "off",
         "react/jsx-props-no-spreading": "off",
+        "react/require-default-props": "off",
         "spaced-comment": "off",
         "arrow-body-style": "off",
         "camelcase": "off",
@@ -52,6 +54,14 @@
             "files": ["**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"],
             "env": {
                 "jest": true
+            }
+        },
+        {
+            "files": [
+                "**/*.stories.*"
+            ],
+            "rules": {
+                "import/no-anonymous-default-export": "off"
             }
         }
     ]

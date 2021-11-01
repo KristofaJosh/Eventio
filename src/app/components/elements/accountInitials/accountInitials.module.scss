@@ -1,0 +1,39 @@
+.initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    color: var(--text-grey);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-family: Hind, sans-serif;
+    text-align: center;
+    letter-spacing: -2px;
+    font-size: 37px;
+
+    > p {
+        position: relative;
+        left: -1px;
+        color: inherit;
+    }
+
+    &__isSmall {
+        width: 40px;
+        height: 40px;
+
+        > p {
+            font-size: var(--f12);
+            position: relative;
+            left: -1px;
+            text-align: center;
+            color: inherit;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.eventNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+        font-size: 12px;
+        font-weight: 400;
+        list-style: none;
+        cursor: pointer;
+    }
+
+    &__select {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        > select {
+            border: none;
+            background-color: transparent;
+            position: relative;
+            left: -10px;
+            top: -1px;
+            text-transform: inherit;
+            font-weight: 400;
+            color: inherit;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__navs {
+        display: inline-grid;
+        align-items: center;
+        grid-auto-flow: column;
+        gap: 32px;
+        color: #a9aeb4;
+        text-transform: uppercase;
+
+        &_isActive {
+            span {
+                color: var(--black);
+                fill: var(--black);
+            }
+
+            path:nth-child(2) {
+                fill: var(--black);
+            }
+        }
+    }
+
+    &__list {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: inline-grid;
+        }
+    }
+
+    > div {
+        gap: 15px;
+
+        div {
+            display: inline-grid;
+            cursor: pointer;
+        }
+
+        svg {
+            pointer-events: none;
+        }
+    }
+}
