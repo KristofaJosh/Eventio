@@ -1,9 +1,8 @@
 import { eventResponseType } from "../../../pages/dashboard/types";
-import { eventNavType } from "../eventNav";
+import { resolveEventResponseType } from "../../../helpers/resolveEventResponse";
 
 export type EventCardType = {
-    view?: eventNavType;
-    event: eventResponseType;
+    event: resolveEventResponseType;
     // eslint-disable-next-line no-unused-vars
     toggleEvent: ({ data }: { data: eventResponseType }) => void;
 };

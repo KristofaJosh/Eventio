@@ -80,9 +80,9 @@ const DashboardEvents = () => {
                 <div className={`${style.events__content} ${view === "list" ? style.events__content_list : style.events__content_grid}`}>
                     {events.filter(sortView(eventView)).map((el) => {
                         if (view === "list") {
-                            return <EventList key={el.id} toggleEvent={toggleEvent} view={eventView} event={el} />;
+                            return <EventList key={el.id} toggleEvent={toggleEvent} event={el} />;
                         }
-                        return <EventGrid key={el.id} toggleEvent={toggleEvent} view={eventView} event={el} />;
+                        return <EventGrid key={el.id} toggleEvent={toggleEvent} event={el} />;
                     })}
                     <CreateEventForm />
                 </div>

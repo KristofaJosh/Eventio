@@ -7,7 +7,7 @@ import Button from "../../elements/button";
 import { useAppSelector } from "../../../store";
 import { handleEventActions } from "../../../helpers/handleEventActions";
 
-const EventList = ({ event, toggleEvent, view }: EventCardType) => {
+const EventList = ({ event, toggleEvent }: EventCardType) => {
     const [btnLoading, setBtnLoading] = useState(false);
     const auth = useAppSelector((state) => state.auth);
     const history = useHistory();
@@ -30,7 +30,15 @@ const EventList = ({ event, toggleEvent, view }: EventCardType) => {
                 <Typography level="f14" lighter>
                     {event.capacity}
                 </Typography>
-                <div className={style.eventDetail__list__action}>{view === "past events" ? null : <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />}</div>
+                <div className={style.eventDetail__list__action}>
+                    {event.future ? (
+                        <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />
+                    ) : (
+                        <Typography title="You cannot join or leave this event because it is in the past" weight={600}>
+                            Past Event
+                        </Typography>
+                    )}
+                </div>
             </div>
         </div>
     );

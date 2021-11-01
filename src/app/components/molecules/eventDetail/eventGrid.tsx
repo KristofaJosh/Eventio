@@ -10,7 +10,7 @@ import { handleEventActions } from "../../../helpers/handleEventActions";
 
 type EventGridType = EventCardType & { detail?: boolean };
 
-const EventGrid = ({ toggleEvent, event, detail, view }: EventGridType) => {
+const EventGrid = ({ toggleEvent, event, detail }: EventGridType) => {
     const [btnLoading, setBtnLoading] = useState(false);
     const auth = useAppSelector((state) => state.auth);
     const history = useHistory();
@@ -40,7 +40,13 @@ const EventGrid = ({ toggleEvent, event, detail, view }: EventGridType) => {
                         {event.capacity}
                     </Typography>
                 </div>
-                {view === "past events" ? null : <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />}
+                {event.future ? (
+                    <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />
+                ) : (
+                    <Typography title="You cannot join or leave this event because it is in the past" weight={600}>
+                        Past Event
+                    </Typography>
+                )}
             </div>
         </div>
     );
