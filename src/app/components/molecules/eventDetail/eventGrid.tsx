@@ -10,7 +10,7 @@ import { handleEventActions } from "../../../helpers/handleEventActions";
 
 type EventGridType = EventCardType & { detail?: boolean };
 
-const EventGrid = ({ toggleEvent, event, detail }: EventGridType) => {
+const EventGrid = ({ toggleEvent, event, detail, view }: EventGridType) => {
     const [btnLoading, setBtnLoading] = useState(false);
     const auth = useAppSelector((state) => state.auth);
     const history = useHistory();
@@ -40,7 +40,7 @@ const EventGrid = ({ toggleEvent, event, detail }: EventGridType) => {
                         {event.capacity}
                     </Typography>
                 </div>
-                <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />
+                {view === "past events" ? null : <Button size="small" loading={btnLoading} {...handleEventActions(event, auth, history, toggleEvent, setBtnLoading)} />}
             </div>
         </div>
     );

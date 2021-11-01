@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<button
+  aria-label="click me"
+  className="button button__isNormal button__btnPrimary   "
+>
+  click me
+</button>
+`;
+
+exports[`Button renders correctly 2`] = `
+<button
+  aria-label="click me"
+  className="button button__isNormal button__btnDanger   "
+>
+  click me
+</button>
+`;
+
+exports[`Button renders correctly 3`] = `
+<button
+  aria-label="click me"
+  className="button button__isNormal button__btnSoft   "
+>
+  click me
+</button>
+`;
+
+exports[`Button renders correctly 4`] = `
+<button
+  aria-label="click me"
+  className="button button__isSmall button__btnPrimary   "
+>
+  click me
+</button>
+`;
+
+exports[`Round Button renders correctly 1`] = `
+<button
+  className="button button__isRound  "
+  type="button"
+/>
+`;
